@@ -1,0 +1,69 @@
+<html>
+<head><title>Case Study</title>
+<style type="text/css">
+		table{
+			border:5px;
+			font-size:20px;
+		}
+		input{
+			width:80px;
+			height:30px;
+			font-size:20px;
+		}
+		select{
+			font-size:20px;
+			width:280px;
+			height:30px;
+			text-align:center;
+		}
+		form.info{
+			background-color:#2F4F4F;
+			height:110px;
+			}
+		a{
+			font-size:30px;
+		}
+		</style>
+</head>
+<center>
+<body>
+		<h1>Job vacancy information system.</h1>
+		<form name="info" method="post" action="/Enter">
+
+			<table cellpadding = "5px" cellspacing ="5px" border="5px">
+				<tr>
+					<td>
+						Select a  geo location
+					</td>
+					<td colspan="3">
+						<select name = "location">
+							{% block body %}
+							{% for ele in js %}
+							<option value = "{{ele}}">{{ ele }}</option>
+							{% endfor %}
+							{% endblock %}
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Select a database
+					</td>
+					<td>
+						<input type="radio" name = "database" value="sqlbefore" align="center">MySQL Before Normalization</input><br/>
+						<input type="radio" name = "database" value="sqlafter">MySQL After Normalization</input><br/>
+						<input type="radio" name = "database" value="mongodb" align="center">MongoDB</input>
+					</td>
+				</tr>
+
+				<tr>
+					<td align="center" colspan="3">
+						<input type="submit" value="Enter"/>
+					</td>
+				</tr>
+			</table>
+		</form><br>
+</body>
+</center>
+</html>

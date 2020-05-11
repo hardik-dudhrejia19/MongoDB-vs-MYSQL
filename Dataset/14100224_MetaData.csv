@@ -1,0 +1,86 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions",Universe,"Variable List"
+"Job vacancies, labour demand and job vacancy rate, three-month moving average, unadjusted for seasonality",14100224,284-0001,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410022401",1;2;10,"CURRENT - a cube available to the public and that is current",Monthly,2011-03-01,2019-06-01,3,,
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Correction Notes","Dimension Definitions"
+1,Geography,,,
+2,"Job vacancy statistics",,,
+3,"North American Industry Classification System (NAICS)",,,
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Correction Notes","Member Geo Attribute Keys","Member Definitions"
+1,Canada,[11124],1,,,,,,
+1,"Newfoundland and Labrador",[10],2,1,,,,,
+1,"Prince Edward Island",[11],3,1,,,,,
+1,"Nova Scotia",[12],4,1,,,,,
+1,"New Brunswick",[13],5,1,,,,,
+1,Quebec,[24],6,1,,,,,
+1,Ontario,[35],7,1,,,,,
+1,Manitoba,[46],8,1,,,,,
+1,Saskatchewan,[47],9,1,,,,,
+1,Alberta,[48],10,1,,,,,
+1,"British Columbia",[59],11,1,,,,,
+1,Yukon,[60],12,1,,,,,
+1,"Northwest Territories",[61],14,1,,,,,
+1,Nunavut,[62],15,1,,,,,
+2,"Number of job vacancies",,1,,,4,,,
+2,"Labour demand",,2,,,5,,,
+2,"Job vacancy rate",,3,,,6,,,
+3,"Industrial aggregate excluding unclassified businesses",[11-91N],2,,,7,,,
+3,"Forestry, logging and support",[11N],4,2,,8,,,
+3,"Mining, quarrying, and oil and gas extraction",[21],10,2,,,,,
+3,Utilities,[22],17,2,,,,,
+3,Construction,[23],21,2,,,,,
+3,Manufacturing,[31-33],34,2,,,,,
+3,"Wholesale trade",[41],145,2,,,,,
+3,"Retail trade",[44-45],178,2,,,,,
+3,"Transportation and warehousing",[48-49],215,2,,,,,
+3,"Information and cultural industries",[51],253,2,,,,,
+3,"Finance and insurance",[52],267,2,,,,,
+3,"Real estate and rental and leasing",[53],284,2,,,,,
+3,"Professional, scientific and technical services",[54],295,2,,,,,
+3,"Management of companies and enterprises",[55],306,2,,,,,
+3,"Administrative and support, waste management and remediation services",[56],307,2,,,,,
+3,"Educational services",[61],321,2,,,,,
+3,"Health care and social assistance",[62],331,2,,,,,
+3,"Arts, entertainment and recreation",[71],354,2,,,,,
+3,"Accommodation and food services",[72],367,2,,,,,
+3,"Other services (except public administration)",[81],377,2,,,,,
+3,"Public administration",[91],393,2,,9,,,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period",..
+"less than the limit of detection",<LOD
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded",0s
+"data quality: excellent",A
+"data quality: very good",B
+"data quality: good",C
+"data quality: acceptable",D
+"use with caution",E
+"too unreliable to be published.",F
+"not applicable",...
+preliminary,p
+revised,r
+"suppressed to meet the confidentiality requirements of the Statistics Act",x
+terminated,t
+
+"Survey Code","Survey Name"
+2612,"Survey of Employment, Payrolls and Hours"
+5202,"Job Vacancy Statistics"
+
+"Subject Code","Subject Name"
+14,Labour
+
+"Note ID",Note
+1,"Data quality indicators are based on the coefficient of variation (CV). Quality indicators indicate the following: A - Excellent (CV from 0% to 4.99%); B - Very good (CV from 5% to 9.99%); C - Good (CV from 10% to 14.99%); D - Acceptable (CV from 15% to 24.99%); E - Use with caution (CV from 25% to 34.99%); F - Too unreliable to publish (CV greater than or equal to 35% or sample size is too small to produce reliable estimates)."
+2,"Estimates for the latest reference month are preliminary."
+4,"The stock of vacant positions on the last business day of the month."
+5,"Labour demand is the sum of total payroll employment (met labour demand) and the number of job vacancies (unmet labour demand)."
+6,"The job vacancy rate is the number of job vacancies or vacant positions on the last business day of the month as a percentage of labour demand (occupied positions and vacant positions)."
+7,"Industrial aggregate covers all industrial sectors except those primarily involved in agriculture, fishing and trapping, private household services, religious organisations and the military personnel of the defence services, federal, provincial and territorial public administration, as well as unclassified businesses. Unclassified businesses are business for which the industrial classification (North American Industry Classification System [NAICS] 2017 Version 3.0) has yet to be determined."
+8,"Forestry, logging and support (11N) includes the following industries: forestry and logging (113) and support activities for forestry (1153)."
+9,"Does not include federal, provincial or territorial public administration."
+10,"This table was previously titled ""Job Vacancy Statistics (JVS), number of job vacancies, labour demand and job vacancy rate by North American Industry Classification System (NAICS), 3-month moving average, unadjusted for seasonality."""
+
+"Dimension ID","Member ID","Attribute Key",Title,Label,"Long Label",Value
+
+

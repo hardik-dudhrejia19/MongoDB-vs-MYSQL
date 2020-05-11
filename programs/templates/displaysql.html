@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL</title>
+    <style type = "text/css"></style>
+</head>
+<body>
+
+    <h1>SQL After Normalization</h1>
+    <h2>The time taken to execute the query is {{time}} seconds</h2>
+    <a href="/">RETURN HOME</a>
+    <p></p>
+    <table cellpadding = "5px" cellspacing ="0px" border="2px">
+        <tr>
+            <th>ID</th>
+            <th>REF_DATE</th>
+            <th>GEO</th>
+            <th>Job vacancy statistics</th>
+            <th>North American Industry Classification System (NAICS)</th>
+            <th>UOM_ID</th>
+            <th>VECTOR</th>
+            <th>COORDINATE</th>
+            <th>VALUE</th>
+            <th>STATUS</th>
+            <th>DECIMALS</th>
+            <th>OrderNumber</th>
+            <th>UOM</th>
+            <th>SCALAR_FACTOR</th>
+            <th>SCALAR_ID</th>
+        </tr>
+    {% for row in  allrows %}
+        <tr>
+            {% for cell in row %}
+            <td>{{cell}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
